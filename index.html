@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="res/images/favicon.ico">
+    <title>My Dashboard</title>
+</head>
+<body>
+
+<header>
+    <strong>Welcome to your dashboard!</strong>
+</header>
+
+<section>
+    <div>
+        <figure>
+            <img src="res/images/Favicon.ico" width="128" height="128" alt="My picture">
+            <figcaption>Me - Profile Picture</figcaption>
+        </figure>
+    </div>
+    <div>
+        <ul>
+            <li>Your Name</li>
+            <li>28/04/2025</li> <!-- exemple de date -->
+            <li>Software Engineering</li>
+        </ul>
+    </div>
+    <div>
+        <strong>2.65</strong>
+    </div>
+</section>
+
+<section>
+    <h1>Courses</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Course Title</th>
+                <th>Semester</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><a href="https://www.atlassian.com/agile" target="_blank" title="Learn Agile">Agile software development</a></td>
+                <td>fall</td>
+                <td>82</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><a href="https://en.wikipedia.org/wiki/Systems_modeling" target="_blank" title="Learn Systems Modeling">Systems modelling</a></td>
+                <td>fall</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><a href="https://en.wikipedia.org/wiki/Requirements_engineering" target="_blank" title="Learn Requirements Engineering">Requirements Engineering</a></td>
+                <td>fall</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><a href="https://en.wikipedia.org/wiki/Human–computer_interaction" target="_blank" title="Learn Human Computer Interaction">Human Computer Interaction</a></td>
+                <td>fall</td>
+                <td>65</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4" style="text-align: center;">End of Courses List</td>
+            </tr>
+        </tfoot>
+    </table>
+</section>
+
+<section>
+    <h2>Add a new course</h2>
+    <form>
+        <label for="courseTitle">Course Title:</label><br>
+        <input type="text" id="courseTitle" name="courseTitle" required><br><br>
+
+        <label for="semester">Semester:</label><br>
+        <select id="semester" name="semester" required>
+            <option value="fall">Fall</option>
+            <option value="spring">Spring</option>
+        </select><br><br>
+
+        <label for="grade">Grade:</label><br>
+        <input type="number" id="grade" name="grade" min="0" max="100" required><br><br>
+
+        <input type="submit" value="Add Course">
+    </form>
+</section>
+
+<footer>
+    <ul>
+        <li>
+            <a href="https://www.inpt.ac.ma/" target="_blank" title="Visit Moodle">Moodle</a>
+        </li>
+        <li>
+            <a href="https://m.inpt.ac.ma/" target="_blank" title="Visit Courses">Courses</a>
+        </li>
+        <li>
+            <a href="mailto:your.email@example.com" title="Send me an email">Contact Me</a>
+        </li>
+    </ul>
+</footer>
+
+</body>
+</html>
