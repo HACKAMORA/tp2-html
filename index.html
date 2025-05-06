@@ -4,34 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="res/images/favicon.ico">
+    <link rel="stylesheet" href="res/styles.css"> 
     <title>My Dashboard</title>
 </head>
 <body>
 
-<header>
-    <strong>Welcome to your dashboard!</strong>
+<header class="header"> 
+    <strong class="logo">Welcome to your dashboard!</strong> 
+    <nav class="nav">
+        <ul>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#add-course">Add Course</a></li>
+        </ul>
+    </nav>
 </header>
 
-<section>
+<section id="profile">
     <div>
         <figure>
-            <img src="res/images/Favicon.ico" width="128" height="128" alt="My picture">
+            <img src="res/imag/o5JTM80D.png"  width="128" height="128" alt="My picture">
             <figcaption>Me - Profile Picture</figcaption>
         </figure>
     </div>
     <div>
         <ul>
             <li>Your Name</li>
-            <li>28/04/2025</li> <!-- exemple de date -->
+            <li>28/04/2025</li> 
             <li>Software Engineering</li>
         </ul>
     </div>
-    <div>
-        <strong>2.65</strong>
+    <div class="table-container"> <!-- Ajout d'un conteneur pour le grade -->
+        <span><strong>2.65</strong></span> <!-- Utilisation de <span> pour changer la couleur du grade via CSS -->
     </div>
 </section>
 
-<section>
+<section id="courses">
     <h1>Courses</h1>
     <table border="1">
         <thead>
@@ -46,25 +54,25 @@
             <tr>
                 <td>1</td>
                 <td><a href="https://www.atlassian.com/agile" target="_blank" title="Learn Agile">Agile software development</a></td>
-                <td>fall</td>
+                <td>Fall</td>
                 <td>82</td>
             </tr>
             <tr>
                 <td>2</td>
                 <td><a href="https://en.wikipedia.org/wiki/Systems_modeling" target="_blank" title="Learn Systems Modeling">Systems modelling</a></td>
-                <td>fall</td>
+                <td>Fall</td>
                 <td>85</td>
             </tr>
             <tr>
                 <td>3</td>
                 <td><a href="https://en.wikipedia.org/wiki/Requirements_engineering" target="_blank" title="Learn Requirements Engineering">Requirements Engineering</a></td>
-                <td>fall</td>
+                <td>Fall</td>
                 <td>99</td>
             </tr>
             <tr>
                 <td>4</td>
                 <td><a href="https://en.wikipedia.org/wiki/Human–computer_interaction" target="_blank" title="Learn Human Computer Interaction">Human Computer Interaction</a></td>
-                <td>fall</td>
+                <td>Fall</td>
                 <td>65</td>
             </tr>
         </tbody>
@@ -76,7 +84,7 @@
     </table>
 </section>
 
-<section>
+<section id="add-course">
     <h2>Add a new course</h2>
     <form>
         <label for="courseTitle">Course Title:</label><br>
@@ -95,18 +103,25 @@
     </form>
 </section>
 
+<section class="grid">
+    <p>Grid Item 1</p>
+    <p>Grid Item 2</p>
+</section>
+
 <footer>
-    <ul>
-        <li>
-            <a href="https://www.inpt.ac.ma/" target="_blank" title="Visit Moodle">Moodle</a>
-        </li>
-        <li>
-            <a href="https://m.inpt.ac.ma/" target="_blank" title="Visit Courses">Courses</a>
-        </li>
-        <li>
-            <a href="mailto:your.email@example.com" title="Send me an email">Contact Me</a>
-        </li>
-    </ul>
+    <div class="footer-container">
+        <ul>
+            <li>
+                <a href="https://www.inpt.ac.ma/" target="_blank" title="Visit Moodle">Moodle</a>
+            </li>
+            <li>
+                <a href="https://m.inpt.ac.ma/" target="_blank" title="Visit Courses">Courses</a>
+            </li>
+            <li>
+                <a href="mailto:your.email@example.com" title="Send me an email">Contact Me</a>
+            </li>
+        </ul>
+    </div>
 </footer>
 
 </body>
